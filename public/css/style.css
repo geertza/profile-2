@@ -1,0 +1,142 @@
+a{
+    background-color: crimson;
+}
+.preview{
+    height: 80vh;
+    border-width: 20px;
+    border-style: ridge;
+    border-color: rgb(66, 66, 173);
+}
+body{
+  background-color: black;
+}
+.me{
+    height: 80vh;
+    filter:drop-shadow(0 0 30px #EC7A44);
+    position: relative;
+    left: 5%;
+}
+.self{
+  height: 100%;
+}
+.logo{
+    width: 35%;
+    color: rgb(18, 89, 170);
+  /* padding: 20px; */
+  /* filter: drop-shadow(30px 10px 4px #4444dd); */
+  -webkit-animation: blink 2.0s linear infinite;
+    -moz-animation: blink 2.0s linear infinite;
+    -ms-animation: blink 2.0s linear infinite;
+    -o-animation: blink 2.0s linear infinite;
+    animation: blink 2.0s linear infinite;
+    position: relative;
+    right: -5%;
+}
+@keyframes blink {
+  0% {
+      filter:drop-shadow(0 0 30px #EC7A44);
+  }
+  50% {
+      filter:drop-shadow( 0 0 5px #EC7A44 );
+  }
+  100% {
+      filter:drop-shadow( 0 0 20px #EC7A44);
+  }
+}
+@-webkit-keyframes blink{ 
+  0% {
+      filter:drop-shadow( 0 0 30px #EC7A44);
+  }
+  50% {
+      filter:drop-shadow( 0 0 0);
+  }
+  100% {
+      filter:drop-shadow( 0 0 20px #EC7A44);
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel");
+
+:root {
+  --neon-border-color: #08f;
+}
+
+h1 {
+  font-family: 'Cinzel';
+  font-weight: 800;
+  align-items: center;  
+  font-size: 2.5vw;
+  font-style: italic;
+  width: 60vw;
+  position: relative;
+  left: -40%;
+  text-shadow: 2px 1px 0 #7A7A7A, 2px 2px 3px rgba(206,89,55,0);
+}
+h2{
+  font-family: 'Cinzel';
+  font-weight: 800;
+  align-items: right;  
+  font-size: 4vw;
+  font-style: italic;
+  width: 60vw;
+  position: relative;
+  right: -30%;
+  text-shadow: 2px 1px 0 #7A7A7A, 2px 2px 3px rgba(206,89,55,0);
+}
+/* .navbar{
+  position: relative;
+  bottom: -20%;
+  height: 3vw;
+  width: 30%;
+} */
+.header {
+  height: auto;
+  background: #000;
+  color: rgb(18, 89, 170);
+  padding: 20px;
+  border: 0.4rem solid #fff;
+  border-radius: 25px;
+  animation: flicker 1.5s infinite alternate;     
+}
+
+.header::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.header::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.header:focus {
+  outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        /* text-shadow:
+            2px 2px 1rem rgba(92, 86, 86, 0.178),
+            1px 1px 1px rgb(82, 77, 77),
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color); */
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        box-shadow: none;
+    }    
+}
