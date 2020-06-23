@@ -16,6 +16,6 @@ app.get('/',function (req,res){
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.listen(port,function(){
+app.listen(Port,function(){
     console.log('server on port 8080...');
 })
