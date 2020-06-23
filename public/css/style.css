@@ -3,9 +3,7 @@ a{
 }
 .preview{
     height: 80vh;
-    border-width: 20px;
-    border-style: ridge;
-    border-color: rgb(66, 66, 173);
+   
 }
 body{
   background-color: black;
@@ -139,4 +137,16 @@ h2{
     20%, 24%, 55% {        
         box-shadow: none;
     }    
+}
+#demo{
+  max-width: 100%;
+  height: auto;
+  border-width: 20px;
+  border-style: ridge;
+  border-color: rgb(66, 66, 173);
+  animation: flicker 1.5s infinite alternate; 
+  /* z-index: 6;
+  position: absolute;
+  left: -30%; */
+  
 }
