@@ -87,7 +87,7 @@ h2{
   height: 3vw;
   width: 30%;
 } */
-.header {
+.header1 {
   height: auto;
   background: #000;
   color: rgb(18, 89, 170);
@@ -97,17 +97,17 @@ h2{
   animation: flicker 1.5s infinite alternate;     
 }
 
-.header::-moz-selection {
+.neon::-moz-selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
 }
 
-.header::selection {
+.neon::selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
 }
 
-.header:focus {
+.neon:focus {
   outline: none;
 }
 
@@ -141,12 +141,93 @@ h2{
 #demo{
   max-width: 100%;
   height: auto;
-  border-width: 20px;
+  border-width: 40px;
   border-style: ridge;
   border-color: rgb(66, 66, 173);
-  animation: flicker 1.5s infinite alternate; 
+  animation: flicker 1.5s infinite alternate;
+  opacity: .8; 
   /* z-index: 6;
   position: absolute;
   left: -30%; */
   
 }
+.barBack
+    {
+            background-image: url(/visuals/bar.jpg);
+        background-attachment: fixed;
+           background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width:100%
+            }
+        
+       .head {
+         background-color: blue;
+       }
+   
+   .speech{
+    color: red;
+    font-size: 40px;
+    background-size: inherit;
+    position: relative;
+    right: -50%;
+     height: 60%;
+     width: 80%;
+     overflow: visible;
+     /* background-color: lavender; */
+ 
+ }  
+ .barSign{
+   width: 10vw;
+   position: relative;
+   left: 15%;
+ }
+ .gridBar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  }
+  .box{
+    background-color: brown;
+    width: 30vw;
+    height: 50vh;
+  }
+  /* .banner{
+    position: relative;
+    right: 30%;
+    top: 0%;
+  } */
+  .guide{
+    height: 30vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50%;
+    left: 80%;
+    z-index: 9;
+  }
+  .nav-link{
+    background-color: rgb(36, 127, 202);
+     border-radius: 15px;
+     color: black;
+     opacity: .8;
+    
+  }
+ 
+.barNav{
+  background-image: url("/visuals/grudge-metal.png");
+  height: 10vh;
+}
+.navbar .navbar-nav {
+  /* display: inline-block; */
+  float: none;
+ color: black;
+  position: relative;
+  left: 20%;
+ 
+}
+
+
+
+ 

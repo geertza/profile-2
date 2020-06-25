@@ -1,12 +1,13 @@
 var express = require("express");
 var router = express.Router();
 const pug = require('pug');
+const path = require('path')
 // Import the model (burger.js) to use its database functions.
 // var model = require("../model/model.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-    pug.renderFile('index');
+  res.sendFile(path.join(__dirname, '../views/', 'index.html'));
 });
 
 // router.post("/", function(req, res) {
@@ -15,8 +16,8 @@ router.get("/", function(req, res) {
 
   
   
-router.post("/:id", (req, res) => {
-  
+router.get("/projects", (req, res) => {
+  res.sendFile(path.join(__dirname, '../views/', 'projects.html'));
   })
 
    
