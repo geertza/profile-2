@@ -1,10 +1,4 @@
-a{
-    background-color: crimson;
-}
-.preview{
-    height: 80vh;
-   
-}
+
 body{
   background-color: black;
 }
@@ -16,6 +10,7 @@ body{
 }
 .self{
   height: 100%;
+  z-index: -3;
 }
 .logo{
     width: 35%;
@@ -139,7 +134,7 @@ h2{
     }    
 }
 #demo{
-  max-width: 100%;
+  max-width: 50vw;
   height: auto;
   border-width: 40px;
   border-style: ridge;
@@ -151,19 +146,9 @@ h2{
   left: -30%; */
   
 }
-.barBack
-    {
-            background-image: url(/visuals/bar.jpg);
-        background-attachment: fixed;
-           background-size: cover;
-            background-repeat: no-repeat;
-            height: 100%;
-            width:100%
-            }
+
         
-       .head {
-         background-color: blue;
-       }
+      
    
    .speech{
     color: red;
@@ -186,32 +171,31 @@ h2{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(20, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 20%;
+  grid-row-gap: 150px;
+  position: relative;
+  left: -10%;
   }
   .box{
-    background-color: brown;
-    width: 30vw;
-    height: 50vh;
+   background-size: cover;
+   background-repeat: no-repeat; 
+   width: 30vw;
+    height: 15vw;
   }
-  /* .banner{
-    position: relative;
-    right: 30%;
-    top: 0%;
-  } */
   .guide{
-    height: 30vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 50%;
-    left: 80%;
-    z-index: 9;
+    position: fixed;
+    top: 30%;
+    right: -15%;
+  }
+  .guide1{
+    height: 50vh;
   }
   .nav-link{
     background-color: rgb(36, 127, 202);
      border-radius: 15px;
      color: black;
      opacity: .8;
+     
     
   }
  
@@ -224,10 +208,72 @@ h2{
   float: none;
  color: black;
   position: relative;
-  left: 20%;
+  left: 20%; 
+  letter-spacing: 5px;
+ }
  
+ 
+ .bubble {
+     position: relative;
+     background: linear-gradient(-2deg, #383782 0%, #4400ff 20%);
+     color: #c9d5d6;
+     font-family: Aladin;
+     font-size: 20px;
+     line-height: 120px;
+     text-align: center;
+     width: 250px;
+     height: 120px;
+     border-radius: 10px;
+     padding: 0px;
+     margin-bottom: 10%;
+     right: 10%;
+ }
+ .bubble:after {
+     content: '';
+     position: absolute;
+     display: block;
+     width: 0;
+     z-index: 1;
+     border-style: solid;
+     border-width: 61px 8px 0 0;
+     border-color: #2412a8 transparent transparent transparent;
+     bottom: -61px;
+     left: 62%;
+     margin-left: -4px;
+ }
+.content{
+  margin-top: 10%;
 }
 
+
+ 
+
+
+
+.contact  {
+      background-image: url(/visuals/henrik-donnestad-DCD0_mzLCsg-unsplash.jpg);    
+      background-repeat: no-repeat;
+      background-size: cover ;
+      width: 70vw;
+      color: rgb(21, 23, 136);
+      font-family: roboto slab;
+      z-index: 9;
+ 
+  display: none;
+}
+
+n {
+  font-family: 'Cinzel';
+  font-weight: 800;
+  align-items: right;  
+  font-size: 4vw;
+  font-style: italic;
+  width: 60vw;
+  position: relative;
+  left: 20px;
+  text-shadow: 2px 1px 0 #7A7A7A, 2px 2px 3px rgba(206,89,55,0);
+}
+         
 
 
  
