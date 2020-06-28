@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/public'));
 //     res.render('index')
 // })
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view");
 app.use(routes);
 app.listen(PORT,function(){

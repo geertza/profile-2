@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 const pug = require('pug');
 const path = require('path')
+const nodemailer = require("nodemailer");
 // Import the model (burger.js) to use its database functions.
 // var model = require("../model/model.js");
 
@@ -21,9 +22,12 @@ router.get("/projects", (req, res) => {
   })
 
    
-  router.get("/delete",(req, res) => {
-      
+  router.post("/contact",(req, res) => {
+    
+    console.log(req.body)  
+    res.redirect("/")
     });
+  
 
 // Export routes for server.js to use.
 module.exports = router;

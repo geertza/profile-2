@@ -4,45 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet", href="/css/style.css">
-    <title>Who's Andy Geertz</title>
+    <link rel="stylesheet", href="../css/style.css">
+    <title>Document</title>
 </head>
 <body>
-  <div class="main">
-  <div class="header1 neon">
-    
-    <div class="row"> 
-      <div class="col s4">
-        <img src="/visuals/logo.png" class="logo"></img>
-      </div>
-      <div class="col s8">
-      <h1>"I'm Eager To Take Your Project To The Next Level!" </h1>
-      <h2>--Andy Geertz</h2>
-      </div>
- 
-    </div>
-    <nav class="navbar navbar-dark bg-black">
-      <form class="form-inline">
-        <button class="btn btn-outline-danger" type="button">Background</button>
-        <button class="btn btn-outline-danger" type="button" id="contact">Contact</button>
-        <button class="btn btn-outline-danger" type="button" href="/projects/">projects</button>
-      </form>
-    </nav>
-  </div> 
-     <div class="row">
-	    <div class="col-md-4 me">
-       <img src="/visuals/self1.png" class="self" >
-        </div>
-        <div class="col-md-8 preview">
-          <video controls autoplay loop muted src="/visuals/Web_Demo.mp4" type="video/mp4" id="demo">
-           
-            Your browser does not support the video tag.
-          </video>
-    </div>
-  </div>
-  <div class="contact container">
+<div class="contact container">
     <div class="close">
-    <button class="btn btn-primary btn-block" id="x">x</button>
+    <button class="btn btn-primary btn-block" id="x" onclick="hide()">x</button>
     </div> 
               <div class="info">
                 <br><br><br>
@@ -79,19 +47,60 @@
                 </div> 
          </form>   
     </div>
-  
-  
+            
+
 </body>
 <style>
- .contact{
-   position: absolute;
-   top: 30%;
-   right: 0%;
- }
-  
+    .info{
+        margin: 0% 10%;
+    }
+    body  {
+      background-image: url(../visuals/henrik-donnestad-DCD0_mzLCsg-unsplash.jpg);    
+      background-repeat: no-repeat;
+      background-size: cover ;
+      width: 100%;
+      color: rgb(21, 23, 136);
+      font-family: roboto slab;
+      z-index: 9;
+        background-color: darkgray;
+  /* display: none; */
+}
+
+n {
+  font-family: 'Cinzel';
+  font-weight: 800;
+  align-items: right;  
+  font-size: 4vw;
+  font-style: italic;
+  width: 60vw;
+  position: relative;
+  left: 20px;
+  text-shadow: 2px 1px 0 #7A7A7A, 2px 2px 3px rgba(206,89,55,0);
+}
+
+#x{
+  width: auto;
+  height: auto;
+  background-color: red;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 700;
+}
+.close{
+    position: absolute;
+    top: 3%;
+    right: 10%;
+}
 </style>
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="/js/script.js" ></script>  
-</html> 
+<script src="../js/script.js" ></script>  
+<script>
+
+</script>
+</html>

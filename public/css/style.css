@@ -1,5 +1,5 @@
 
-body{
+.main{
   background-color: black;
 }
 .me{
@@ -200,7 +200,7 @@ h2{
   }
  
 .barNav{
-  background-image: url("/visuals/grudge-metal.png");
+  background-image: url("./visuals/grudge-metal.png");
   height: 10vh;
 }
 .navbar .navbar-nav {
@@ -245,33 +245,50 @@ h2{
   margin-top: 10%;
 }
 
-
- 
-
-
-
+.info{
+  margin: 0% 10%;
+}
 .contact  {
-      background-image: url(/visuals/henrik-donnestad-DCD0_mzLCsg-unsplash.jpg);    
-      background-repeat: no-repeat;
-      background-size: cover ;
-      width: 70vw;
-      color: rgb(21, 23, 136);
-      font-family: roboto slab;
-      z-index: 9;
- 
-  display: none;
+background-image: url(../visuals/henrik-donnestad-DCD0_mzLCsg-unsplash.jpg);    
+background-repeat: no-repeat;
+background-size: cover ;
+width: 60vw;
+height:60vh;
+color: rgb(21, 23, 136);
+font-family: roboto slab;
+z-index: 9;
+  background-color: darkgray;
+display: none;
+overflow: scroll;
 }
 
 n {
-  font-family: 'Cinzel';
-  font-weight: 800;
-  align-items: right;  
-  font-size: 4vw;
-  font-style: italic;
-  width: 60vw;
-  position: relative;
-  left: 20px;
-  text-shadow: 2px 1px 0 #7A7A7A, 2px 2px 3px rgba(206,89,55,0);
+font-family: 'Cinzel';
+font-weight: 800;
+align-items: right;  
+font-size: 4vw;
+font-style: italic;
+width: 60vw;
+position: relative;
+left: 20px;
+text-shadow: 2px 1px 0 #7A7A7A, 2px 2px 3px rgba(206,89,55,0);
+}
+
+#x{
+width: auto;
+height: auto;
+background-color: red;
+border-radius: 20px;
+color: white;
+text-align: center;
+font-size: 3vw;
+font-weight: 700;
+}
+.close{
+  position: fixed;
+
+top: 30%;
+right: 3%;
 }
          
 

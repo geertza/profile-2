@@ -21,10 +21,10 @@
                <a class="nav-link  mx-3 " href="/" s >Home</a> 
             </li>
             <li class="nav-item active">
-                <a class="nav-link mx-3" >projects<span class="sr-only">(current)</span></a>
+                <a class="nav-link mx-3"  >Projects<span class="sr-only">(current)</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mx-3" >Pricing</a>
+                <a> <button class="nav-link mx-3" id="contact" >Contact</button></a>
             </li>
            
         </ul>
@@ -69,7 +69,7 @@
         </div>
       </div> 
       <div class="contact ">
-        <form>
+       
         
           <div class="row">
             <div class="col-md-7 " >
@@ -82,27 +82,28 @@
                 <n >phone: (406)539-1218</n>
             </div>
             <!-- form class to input info -->
-             <!-- had to downsize a touch for responsive adjustment and visual alignment with bg -->
+             <form> <!-- had to downsize a touch for responsive adjustment and visual alignment with bg -->
             <div class="col-md-5" >
               <div class="form-group">
               <label>Name</label>
-                <input type="text" class="form-control">
+                <input type="text"  name='name' class="form-control">
               </div>
               <div class="form-group">
                 <label>Phone</label>
-                  <input type="tel" class="form-control">
+                  <input type="tel" name="phone" class="form-control">
                 </div>
                 <div class="form-group">
                   <label>Email</label>
-                    <input type="text" class="form-control">
+                    <input type="text" name='email'class="form-control">
                   </div>
                   <div class="form-group">
                     <label>Message</label>
-                    <textarea class="form-control"  rows="6"></textarea>
+                    <textarea name='message'class="form-control"  rows="6"></textarea>
                       </div>
                       <!-- add button to send the information to my email -->
                      <div class="form-group">
-                       <button class="btn btn-primary btn-block">Send</button>
+                      <button class="btn btn-primary btn-block" id="x">x</button> 
+                      <button class="btn btn-primary btn-block">Send</button>
                      </div> 
             </div>
           </div>

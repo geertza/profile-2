@@ -12,13 +12,17 @@ $('#contact').click (function() {
 })
 
 // // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
+$('#x').click (function() {
+  $('.contact').css("display","none")
+})
+  // preventdefault();
+  // $('contact').css("display","none")
+
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    $('.contact').css("display","none")
-  }
-}
+
+$("#postContact").on('click',function() {
+  console.log(this);
+})
+
+
