@@ -1,10 +1,3 @@
-// Get the modal
-var modal = document.getElementsByClassName("contact");
-
-
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 $('#contact').click (function() {

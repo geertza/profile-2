@@ -1,7 +1,4 @@
 
-.main{
-  background-color: black;
-}
 .me{
     height: 80vh;
     filter:drop-shadow(0 0 30px #EC7A44);
@@ -12,8 +9,14 @@
   height: 100%;
   z-index: -3;
 }
+nav{
+  height: 10vh;
+  z-index: 3;
+  position: absolute;
+  top: 30%;
+}
 .logo{
-    width: 35%;
+    height: 15vh;
     color: rgb(18, 89, 170);
   /* padding: 20px; */
   /* filter: drop-shadow(30px 10px 4px #4444dd); */
@@ -22,8 +25,10 @@
     -ms-animation: blink 2.0s linear infinite;
     -o-animation: blink 2.0s linear infinite;
     animation: blink 2.0s linear infinite;
-    position: relative;
-    right: -5%;
+    position: absolute;
+    left: 10%;
+    top: -33%;
+    z-index: 2;
 }
 @keyframes blink {
   0% {
@@ -58,18 +63,16 @@ h1 {
   font-family: 'Cinzel';
   font-weight: 800;
   align-items: center;  
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-style: italic;
-  width: 60vw;
-  position: relative;
-  left: -40%;
+ 
   text-shadow: 2px 1px 0 #7A7A7A, 2px 2px 3px rgba(206,89,55,0);
 }
 h2{
   font-family: 'Cinzel';
   font-weight: 800;
   align-items: right;  
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: italic;
   width: 60vw;
   position: relative;
@@ -84,12 +87,15 @@ h2{
 } */
 .header1 {
   height: auto;
-  background: #000;
   color: rgb(18, 89, 170);
   padding: 20px;
+   
+}
+.neon{
   border: 0.4rem solid #fff;
   border-radius: 25px;
-  animation: flicker 1.5s infinite alternate;     
+  animation: flicker 1.5s infinite alternate; 
+  overflow: hidden;  
 }
 
 .neon::-moz-selection {
@@ -190,28 +196,50 @@ h2{
   .guide1{
     height: 50vh;
   }
+  /* .navbar{
+    height: 10vh;
+  } */
   .nav-link{
-    background-color: rgb(36, 127, 202);
-     border-radius: 15px;
-     color: black;
-     opacity: .8;
-     
-    
+    display: inline;
+    font-size: .8vw;
+    background-color: black;
+    border-radius: 3px;
+    color: rgb(190, 18, 18);
+    opacity: .8;
+    border-style: solid ;
+     border-width: 3px;
+    border-color: rgb(129, 8, 8);
+   margin: 0px;
+   padding: 5px;
+   text-align: center;
+   font-weight: 800;
+    /* width: 130px; 
+    height: auto; */
+    /* Skew */
+    -webkit-transform: skew(30deg); 
+    -moz-transform: skew(30deg); 
+    -o-transform: skew(30deg);
+    transform: skew(30deg);
   }
+  
+  
  
 .barNav{
   background-image: url("./visuals/grudge-metal.png");
   height: 10vh;
 }
-.navbar .navbar-nav {
+.active{
+  background-color: slategray;
+}
+/* .navbar .navbar-nav {
   /* display: inline-block; */
-  float: none;
+  /* float: none;
  color: black;
   position: relative;
   left: 20%; 
   letter-spacing: 5px;
- }
- 
+ } */
+
  
  .bubble {
      position: relative;
@@ -286,10 +314,18 @@ font-weight: 700;
 }
 .close{
   position: fixed;
-
 top: 30%;
 right: 3%;
 }
+.background{
+  background-image: url('background-image: url(../visuals/justin-kauffman-fpoHihXiMhg-unsplash.jpg);)';
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
+  background-color: royalblue;
+}
+
          
 
 

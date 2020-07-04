@@ -20,7 +20,9 @@ router.get("/", function(req, res) {
 router.get("/projects", (req, res) => {
   res.sendFile(path.join(__dirname, '../views/', 'projects.html'));
   })
-
+  router.get("/about", (req, res) => {
+    res.sendFile(path.join(__dirname, '../views/', 'about.html'));
+    })
    
   router.post("/contact",(req, res) => {
     
