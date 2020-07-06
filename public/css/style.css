@@ -18,6 +18,7 @@
   height: 100%;
   z-index: -3;
 }
+
 .fullNav{
   display: fixed;
 }
@@ -28,7 +29,7 @@ nav{
   top: 6vh;
 }
 .logo{
-    height: 50%;
+    width: 80%;
     color: rgb(18, 89, 170);
   /* padding: 20px; */
   /* filter: drop-shadow(30px 10px 4px #4444dd); */
@@ -38,8 +39,8 @@ nav{
     -o-animation: blink 2.0s linear infinite;
     animation: blink 2.0s linear infinite;
     position: absolute;
-    left: 5vw;
-    top: -2vh;
+    left: ovw;
+    top: -5vh;
     z-index: 2;
 }
 @keyframes blink {
@@ -91,18 +92,7 @@ h2{
   right: -30%;
   text-shadow: 2px 1px 0 #7A7A7A, 2px 2px 3px rgba(206,89,55,0);
 }
-/* .navbar{
-  position: relative;
-  bottom: -20%;
-  height: 3vw;
-  width: 30%;
-} */
-.header1 {
-  height: auto;
-  color: rgb(18, 89, 170);
-  padding: 20px;
-   
-}
+
 .neon{
   border: 0.4rem solid #fff;
   border-radius: 25px;
@@ -151,41 +141,11 @@ h2{
         box-shadow: none;
     }    
 }
-#demo{
-  max-width: 50vw;
-  height: auto;
-  border-width: 40px;
-  border-style: ridge;
-  border-color: rgb(66, 66, 173);
-  animation: flicker 1.5s infinite alternate;
-  opacity: .8; 
-  /* z-index: 6;
-  position: absolute;
-  left: -30%; */
-  
-}
 
 
-  
-  
- 
-.barNav{
-  background-image: url("./visuals/grudge-metal.png");
-  height: 10vh;
-}
 .active{
   background-color: slategray;
 }
-/* .navbar .navbar-nav {
-  /* display: inline-block; */
-  /* float: none;
- color: black;
-  position: relative;
-  left: 20%; 
-  letter-spacing: 5px;
- } */
-
- 
 
 
   .nav-link{
@@ -202,9 +162,6 @@ h2{
    padding: 5px;
    text-align: center;
    font-weight: 800;
-    /* width: 130px; 
-    height: auto; */
-    /* Skew */
     -webkit-transform: skew(30deg); 
     -moz-transform: skew(30deg); 
     -o-transform: skew(30deg);
@@ -253,13 +210,9 @@ text-align: center;
 font-size: 3vw;
 font-weight: 700;
 }
-.close{
-  position: fixed;
-top: 30%;
-right: 3%;
-}
+
 .background{
-  background-image: url('background-image: url(../visuals/justin-kauffman-fpoHihXiMhg-unsplash.jpg);)';
+  background-image: url('background-image: url(../visuals/justin-kauffman-fpoHihXiMhg-unsplash.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100vw;
@@ -267,6 +220,20 @@ right: 3%;
   background-color: royalblue;
 }
 
+ /* @media Rule  */
+@media all and (max-width: 650px) {
+  .logo{
+    width: 100%;
+    top: -40%;
+  }
+  .nav-link{
+    padding: 5px;
+    font-size: 14px;
+  }
+  n{
+    text-shadow: .5px .5px 0 #7A7A7A, .5px .5px 1px rgba(206,89,55,0);
+  }
+}
          
 
 

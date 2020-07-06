@@ -13,13 +13,10 @@
     
     <div class="row"> 
       <div class="col s5">
-        <div class="fullNav">
+          <!-- navbar and icon -->
+      <div class="fullNav">
         <img src="/visuals/logo.png" class="logo"></img>
-        <nav class="navbar navbar-expand-sm">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <nav class="navbar ">
             <ul class="navbar-nav ">
               <li class="nav-item ">
                   <a class="nav-link active" type="button" href="\">home</a>
@@ -28,7 +25,6 @@
                   <a class="nav-link" type="button" href="\projects">projects</a>
                 </li>
              </ul>
-      </div>
       </nav>
       </div>
     </div>
@@ -44,7 +40,7 @@
 	    <div class="col-md-4 me">
        <img src="/visuals/self1.png" class="self " >
         </div>
-        <div class="col-md-8 preview">
+        <div class="col preview">
           <video controls autoplay loop muted src="/visuals/Web_Demo.mp4" type="video/mp4" id="demo">
              Your browser does not support the video tag.
           </video>
@@ -93,23 +89,79 @@
   
 </body>
 <style>
+  .header1 {
+  height: 20vh;
+  color: rgb(18, 89, 170);
+  padding: 20px;
+   
+}
   .fullNav{
   position: absolute;
   left: 3%;
   top: -5%;
-  height: 22vh;
+  height: fit-content;
   width: auto;
 }
  .contact{
    position: absolute;
-   top: 30%;
-   right: 0%;
+   top: 20%;
+   right: 20%;
+   height: 70vh;
+ }
+ #x{
+   position: absolute;
+   right: 10%;
+   top: 10%;
  }
  h1{
   position: relative;
   right: 10%;
   width: 60vw;
  }
+ #demo{
+  width: 50vw;
+  border-width: 20px;
+  border-style: ridge;
+  border-color: rgb(66, 66, 173);
+  animation: flicker 1.5s infinite alternate;
+}
+  /* @media Rule  */
+@media all and (max-width: 650px) {
+  .logo{
+    width: 90%;
+    top: -40%;
+  }
+  .fullNav{
+    width: 50vw;
+  }
+  .nav-link{
+    padding: 5px;
+    font-size: 10px;
+  }
+  video{
+    
+    width: 100vw;
+  }
+ .preview{
+   width: 100vw;
+  height: 50vh;
+   position: absolute;
+    bottom: -10%;
+    right: 0%;
+ }
+  #demo{ 
+  background-color: aqua;
+    z-index: 99;
+    height: auto;
+    width: 90vw;
+  }
+  h1{
+    text-shadow: .5px .5px 0 #7A7A7A, .5px .5px 1px rgba(206,89,55,0);
+  }
+  h2{
+    text-shadow: .5px .5px 0 #7A7A7A, .5px .5px 1px rgba(206,89,55,0);
+  }
+}
  
  
   
