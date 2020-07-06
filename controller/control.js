@@ -20,15 +20,17 @@ router.get("/", function(req, res) {
 router.get("/projects", (req, res) => {
   res.sendFile(path.join(__dirname, '../views/', 'projects.html'));
   })
-  router.get("/about", (req, res) => {
+router.get("/about", (req, res) => {
     res.sendFile(path.join(__dirname, '../views/', 'about.html'));
     })
+router.get("/demo", (req, res) => {
+      res.sendFile(path.join(__dirname, '../views/', 'demo.html'));
+      })
    
-  router.post("/contact",(req, res) => {
-    
-    console.log(req.body)  
+router.post("/contact",(req, res) => {  
     res.redirect("/")
     });
+
   
 
 // Export routes for server.js to use.

@@ -17,3 +17,10 @@ $('#contact').click (function() {
     $('.aboutMe').css("display","none")
     $('.contact').css("display","none")
   })
+
+  $('#myGithub').click (function() {
+    window.open('https://github.com/geertza')
+  })
+  $('#linked').click (function() {
+    window.open('https://www.linkedin.com/in/andy-geertz-283b4098')
+  })

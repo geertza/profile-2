@@ -1,22 +1,34 @@
 
+.main{
+  background-color: black;
+  z-index: -1;
+  width: 97vw;
+  height:97vh;
+  overflow: hidden;
+  margin: 1.5%;
+}
 .me{
     height: 80vh;
     filter:drop-shadow(0 0 30px #EC7A44);
     position: relative;
     left: 5%;
+    top: -20%;
 }
 .self{
   height: 100%;
   z-index: -3;
 }
+.fullNav{
+  display: fixed;
+}
 nav{
-  height: 10vh;
+  height: 35%;
   z-index: 3;
-  position: absolute;
-  top: 30%;
+  position: relative;
+  top: 6vh;
 }
 .logo{
-    height: 15vh;
+    height: 50%;
     color: rgb(18, 89, 170);
   /* padding: 20px; */
   /* filter: drop-shadow(30px 10px 4px #4444dd); */
@@ -26,8 +38,8 @@ nav{
     -o-animation: blink 2.0s linear infinite;
     animation: blink 2.0s linear infinite;
     position: absolute;
-    left: 10%;
-    top: -33%;
+    left: 5vw;
+    top: -2vh;
     z-index: 2;
 }
 @keyframes blink {
@@ -153,52 +165,29 @@ h2{
   
 }
 
-        
-      
-   
-   .speech{
-    color: red;
-    font-size: 40px;
-    background-size: inherit;
-    position: relative;
-    right: -50%;
-     height: 60%;
-     width: 80%;
-     overflow: visible;
-     /* background-color: lavender; */
+
+  
+  
  
- }  
- .barSign{
-   width: 10vw;
-   position: relative;
-   left: 15%;
- }
- .gridBar {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(20, 1fr);
-  grid-column-gap: 20%;
-  grid-row-gap: 150px;
+.barNav{
+  background-image: url("./visuals/grudge-metal.png");
+  height: 10vh;
+}
+.active{
+  background-color: slategray;
+}
+/* .navbar .navbar-nav {
+  /* display: inline-block; */
+  /* float: none;
+ color: black;
   position: relative;
-  left: -10%;
-  }
-  .box{
-   background-size: cover;
-   background-repeat: no-repeat; 
-   width: 30vw;
-    height: 15vw;
-  }
-  .guide{
-    position: fixed;
-    top: 30%;
-    right: -15%;
-  }
-  .guide1{
-    height: 50vh;
-  }
-  /* .navbar{
-    height: 10vh;
-  } */
+  left: 20%; 
+  letter-spacing: 5px;
+ } */
+
+ 
+
+
   .nav-link{
     display: inline;
     font-size: .8vw;
@@ -221,54 +210,6 @@ h2{
     -o-transform: skew(30deg);
     transform: skew(30deg);
   }
-  
-  
- 
-.barNav{
-  background-image: url("./visuals/grudge-metal.png");
-  height: 10vh;
-}
-.active{
-  background-color: slategray;
-}
-/* .navbar .navbar-nav {
-  /* display: inline-block; */
-  /* float: none;
- color: black;
-  position: relative;
-  left: 20%; 
-  letter-spacing: 5px;
- } */
-
- 
- .bubble {
-     position: relative;
-     background: linear-gradient(-2deg, #383782 0%, #4400ff 20%);
-     color: #c9d5d6;
-     font-family: Aladin;
-     font-size: 20px;
-     line-height: 120px;
-     text-align: center;
-     width: 250px;
-     height: 120px;
-     border-radius: 10px;
-     padding: 0px;
-     margin-bottom: 10%;
-     right: 10%;
- }
- .bubble:after {
-     content: '';
-     position: absolute;
-     display: block;
-     width: 0;
-     z-index: 1;
-     border-style: solid;
-     border-width: 61px 8px 0 0;
-     border-color: #2412a8 transparent transparent transparent;
-     bottom: -61px;
-     left: 62%;
-     margin-left: -4px;
- }
 .content{
   margin-top: 10%;
 }
