@@ -1,8 +1,8 @@
 var express = require("express");
 var router = express.Router();
 const path = require('path')
-const nodemailer = require("nodemailer");
-// Import the model (burger.js) to use its database functions.
+
+
 // var model = require("../model/model.js");
 
 // Create all our routes and set up logic within those routes where required.
