@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+   
+    <title>About Andy</title>
+</head>
+<body>
+        <header>
+            
+            <img src="./visuals/logo.png" class="newlogo"></img>
+          
+                <div class="btnLeft ">
+                    <ul class="list-unstyled">
+                    <li>
+                        <button class="guide" id='projects' type="button" href="\projects">PROJECTS</button>
+                    </li>
+                    <li>
+                        <button class="guide" id='about' type="button" href="\about">WHO'S ANDY</button>  
+                    </li>
+                    </ul>
+                </div>
+                 <div class="moon2 neon"  ></div>
+                <div class="btnRight ">
+                    <ul class="list-unstyled">
+                    <li>     
+                <button class="guide " id="home" type="button">HOME</button>
+                    </li>
+                    <li>
+                <button class="guide " id="contact" type="button">CONTACT</button>
+                    </li>
+                </ul >
+                </div>
+        
+        </header>
+
+
+           
+</body>
+<style>
+  header{
+    height: 20vh;
+     width:100vw;
+     overflow: hidden;
+    display: fixed;
+ background-image: url(./visuals/mantel.jpg);
+ border-width: 0px;  
+  }
+  .moon2{
+    height: 80vh;
+    width: 80vh;
+    border-radius: 50%;
+    background-image: url(./visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    left: 30%;
+    top: -220%;
+ } 
+ .guide{
+  width: 20vw;
+  height: 7vh;
+ color: white;
+  border-width: 1vh;
+  background-color: rgba(0, 0, 0, 0.233);
+  font-weight:600 ;
+  text-shadow:2px #EC7A44 ;
+  margin: 1.5vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    border-style:ridge;
+    border-color: rgba(112, 128, 144, 0.452);
+}
+.btnleft{
+    display: block;
+    position: absolute;
+    left: 0%;
+    top:5%;
+} 
+.btnRight{
+    display: block;
+    position: absolute;
+    right: 0%;
+    top:0%; 
+}
+.newlogo{
+      height: 30vh;
+      position: absolute;
+      left:35%; 
+       top: -4vh;
+      /* clip-path: ellipse(49% 40% at 50% 50%); */
+      z-index: 3;
+      filter: drop-shadow(0 10px 8px black);
+      
+  }
+
+  .neon{
+ 
+ border: 0.1rem  rgb(13, 24, 177);
+ 
+ --neon-border-color: rgb(11, 9, 20);
+ animation: flicker 2.0s linear infinite;
+
+}
+
+/* --------------neon effects------------------ */
+
+@keyframes flicker {
+   
+ 0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+     
+     box-shadow:
+         0 0 .5rem rgb(22, 30, 141),
+         inset 0 0 .5rem rgb(38, 13, 99),
+         0 0 2rem var(--neon-border-color),
+         inset 0 0 2rem var(--neon-border-color),
+         0 0 4rem var(--neon-border-color),
+         inset 0 0 4rem var(--neon-border-color);        
+ }
+ 
+ 20%, 24%, 55% {        
+     text-shadow: none;
+     box-shadow: none;
+ }    
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet", href="/css/style.css">
+<link rel="stylesheet", href="./public/css/style.css">
     <title>Who's Andy Geertz</title>
 </head>
 <body>
       <header>
-      <img src="/visuals/logo.png" class="newlogo"></img>
+      <img src="./visuals/logo.png" class="newlogo"></img>
      <div class="btnLeft ">
               <ul class="list-unstyled">
               <li>
@@ -35,24 +35,24 @@
       </div>
   </header>
   <div class="filler"></div>
-    <div class="container-fluid pig">
+    <div class="container-fluid">
         <div class="row">
           <div class="col-1 side">
             1 of 3
           </div>
-          <div class="col-11 middle">
+          <div class="col-10 middle">
             <div class="preview">
-              <video controls autoplay loop muted src="/visuals/Web_Demo.mp4" type="video/mp4" id="demo">
+              <video controls autoplay loop muted src="./public/visuals/Web_Demo.mp4" type="video/mp4" id="demo">
                  Your browser does not support the video tag.
               </video>
           </div>
-          <h2>Always eager to take it to the Next Level!</h2>
           </div>
-            
-          
+          <div class="col-1 side">
+            3 of 3
+          </div>
         </div>
     </div>
-    <img src="/visuals/andy2.png" class="self " >
+    <img src="./public/visuals/self1.png" class="self " >
     <div class="contact container">
         <div class="close">
         <button class="btn btn-primary btn-block" id="x">x</button>
@@ -94,52 +94,31 @@
         </div>
 </body>
 <style>
-.pig{
-  background-color: white;
-  background-image: url(/visuals/snowPlanet.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
+.side{
+    background-image: url('./public/visuals/mantel.jpg');
 }
-/* .middle{
-    background-image: url('/visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg');
+.middle{
+    background-image: url('./public/visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg');
     
-} */
+}
 .preview{
-  position: relative;
-  right: -40%;
     margin: 2vw;
     width: 80vw;
-}
-.side{
-  /* background-image: url(/visuals/mantel.jpg); */
-  height: 90vh;
 }
 .filler{
 
 height: 20vh;
  width:100vw;
 }
-video{
-  position: fixed;
-  left: 10%;
-  top: 30%;
-  width: 30vw;
-}
 .self{
     position: fixed;
-    bottom: -10%;
-    left: 0%;
-    height: 80vh;
-    filter:drop-shadow(2px 2px 20px #EC7A44);
-   
-   filter:box-shadow(         inset 0 0 10px #000000);
+    bottom: -3%;
+    right: 10%;
+    width: 30vw;
 }
 /* -------just this version--------------- */
 .contact{
    display: none;
- }
- h2{
-   color: aliceblue;
  }
   
 </style>
