@@ -10,142 +10,103 @@
 </head>
 <body> 
     <!-- navbar and icon -->
-    <div class="fullNav">
-      <img src="/visuals/logo.png" class="logo"></img>
-      <nav class="navbar ">
-          <ul class="navbar-nav ">
-            <li class="nav-item ">
-                <a class="nav-link active" type="button" href="\">home</a>
-                <button class="nav-link " id="contact" type="button">Contact</button>
-                <a class="nav-link" type="button" href="\about"> Who's This </a>
-                <a class="nav-link" type="button" href="\projects">projects</a>
-              </li>
-           </ul>
-    </nav>
-    </div>
-    <div class="row container content ">
-      <div class="col-8 container gridBar">
+    <header>
+            
+      <div class="moon2 neon"  >
+              <img src="./visuals/logo.png" class="newlogo"></img>
+          </div>
+   
+         <div class="headerBar">
+             <button class="marble" id="contact" type="button" ><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-inbox" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                 <path fill-rule="evenodd" d="M3.81 4.063A1.5 1.5 0 0 1 4.98 3.5h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1-.78.624l-3.7-4.624a.5.5 0 0 0-.39-.188H4.98a.5.5 0 0 0-.39.188L.89 9.312a.5.5 0 1 1-.78-.624l3.7-4.625z"/>
+                 <path fill-rule="evenodd" d="M.125 8.67A.5.5 0 0 1 .5 8.5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124a1.5 1.5 0 0 1-1.489 1.314H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393zm.941.83l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438l.32-2.562H10.45a2.5 2.5 0 0 1-4.9 0H1.066z"/>
+               </svg>CONTACT</button>              
+         
+          <a class="marble neon" id="home" type="button" href="\"><p></p><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+             <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+             <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+           </svg><p>HOME</p></a>
+          <a class="marble" id='projects' type="button" href="\projects" ><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-image" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+             <path fill-rule="evenodd" d="M14.002 2h-12a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-12-1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12z"/>
+             <path d="M10.648 7.646a.5.5 0 0 1 .577-.093L15.002 9.5V14h-14v-2l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71z"/>
+             <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+           </svg>PROJECTS</a>
+        
+  </header>
+   <div class="filler"></div>
+   <div class="backdrop cantainer-fluid">
+    <div class="row">
+      <div class="col-sm-9 gridBar">
         <div class="box">
-            <button class="box" style="background-image: url('/visuals/nerdverse.png')" id="nerd" ></button>
-          </div>
-          <div class="box">
-            <button class="box" style=" background-image: url('/visuals/hkb.png')" id="boss"></button>
-          </div>
-          <div class="box">
-            <button class="box" style="background-image: url('/visuals/weatherPreview.png')" id="weather"></button>
-          </div>
-          
-          <div class="box">
-            <button class="box" style="background-image: url('/visuals/sloshed.png')" id="sloshed"></button>
-          </div>
-          <div class="box">
-            <button class="box" style="background-image: url('/visuals/team-roster.png')" id="team"></button>
-          </div>
-          <div class="box">
-            <button class="box" style="background-image: url('/visuals/note.png')" id="note"></button>
-          </div>
-          <div class="box">
-            <button class="box" style="background-image: url('/visuals/burger-time.png')" id="burger"></button>
-          </div>
-          <div class="box">
-            <button class="box" style="background-image: url('/visuals/diamond.png')" id="diamond"></button>
-          </div>
-          <div class="box">
-            <button class="box" style="background-image: url('/visuals/penny.jpg')" id="money"></button>
-          </div>
+          <button class="box" style="background-image: url('/visuals/nerdverse.png')" id="nerd" ></button>
+        </div>
+        <div class="box">
+          <button class="box" style=" background-image: url('/visuals/hkb.png')" id="boss"></button>
+        </div>
+        <div class="box">
+          <button class="box" style="background-image: url('/visuals/weatherPreview.png')" id="weather"></button>
+        </div>
+        
+        <div class="box">
+          <button class="box" style="background-image: url('/visuals/sloshed.png')" id="sloshed"></button>
+        </div>
+        <div class="box">
+          <button class="box" style="background-image: url('/visuals/team-roster.png')" id="team"></button>
+        </div>
+        <div class="box">
+          <button class="box" style="background-image: url('/visuals/note.png')" id="note"></button>
+        </div>
+        <div class="box">
+          <button class="box" style="background-image: url('/visuals/burger-time.png')" id="burger"></button>
+        </div>
+        <div class="box">
+          <button class="box" style="background-image: url('/visuals/diamond.png')" id="diamond"></button>
+        </div>
+        <div class="box">
+          <button class="box" style="background-image: url('/visuals/penny.jpg')" id="money"></button>
         </div>
       </div>
-        <div class=" guide col-4">
-          <div class="bubble">
+    </div>
+      </div>
+      <div class="col-sm-3 guide">
+        <div class="bubblePlacement">
+        <div class="bubble">
           <div class="badges">
              </div>
-          <div class="title neon"></div>
-    <div class="discription">What project are you interested in?</div>
-    <button class="liveRedirect">Visit</button>
-    <button class="githubRedirect">Code</button>
+          <div class="title "></div>
+      <div class="discription">What project are you interested in?</div>
+      <button class="liveRedirect">Visit</button>
+      <button class="githubRedirect">Code</button>
     </div>
-            <img class="guide1" src="/visuals/guide1.png"></img>
-        </div>
-           
-        </div>
-      </div> 
-      <div class="contact ">
-       
-        
-          <div class="row">
-            <div class="col-md-7 " >
-              <br><br><br>
-              <n>Andy Geertz  </n> 
-              <br> 
-              
-              <n>Geertza@gmail.com<n>
-              <br>
-                <n >phone: (406)539-1218</n>
-            </div>
-            <!-- form class to input info -->
-             <form> <!-- had to downsize a touch for responsive adjustment and visual alignment with bg -->
-            <div class="col-md-5" >
-              <div class="form-group">
-              <label>Name</label>
-                <input type="text"  name='name' class="form-control">
-              </div>
-              <div class="form-group">
-                <label>Phone</label>
-                  <input type="tel" name="phone" class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Email</label>
-                    <input type="text" name='email'class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <label>Message</label>
-                    <textarea name='message'class="form-control"  rows="6"></textarea>
-                      </div>
-                      <!-- add button to send the information to my email -->
-                     <div class="form-group">
-                      <button class="btn btn-primary btn-block" id="x">x</button> 
-                      <button class="btn btn-primary btn-block">Send</button>
-                     </div> 
-            </div>
-          </div>
-        
-        </form>
-</body>
+  </div>
+      <div class="guidePlacement">
+      <img class="guide1" src="/visuals/guide1.png"></img>
+      </div>
+      </div>
+      </div>
+
+    <!-- backdrop div -->
+   </div>
 <style>
-  body
+  body{
+    background-color: rgb(7, 63, 7);
+  }
+  .backdrop
     {
-            background-image: url(/visuals/blackboard.png);
-        background-attachment: fixed;
-           background-size: 100% 100%;
-            background-repeat: no-repeat;
-            height: 100vh;
-            width:100vw;
+      position: relative;
+      top: 6vh;
+            border-style:ridge;
+            border-color: rgb(83, 48, 17);
+            border-width: 3.5vw;
+            height: auto;
+            width:100%;
             margin: 1.5%;
+            
             }
-.fullNav{
-  position: fixed;
-  right: 3%;
-  top: 5%;
-  height: 22vh;
-  width: auto;
-  z-index: 9;
-  }
-            .contact{
-    position: absolute;
-  top: 20%;
-  left: 10%;
-  }
+
+  
  
-        .guide{
-    position: fixed;
-    top: 20%;
-    right: 2%;
-  }
-  .guide1{
-    height: 40vh;
-    position: relative;
-    left: 30%;
-  }
+ 
 
           
       
@@ -162,16 +123,14 @@
      /* background-color: lavender; */
  
  }  
-
+/* ---projects grid */
  .gridBar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 5%;
   grid-row-gap: 1%;
-  position: absolute;
-  left: 5%;
-  top: 10%;
+ 
   }
   .box{
    background-size: cover;
@@ -182,7 +141,19 @@
   }
  
   
- 
+ /* --------------guide------------- */
+         .guide{
+    position: fixed;
+    bottom: 0%;
+    right: 2%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  .bubblePlacement{
+  background-color: rgba(244, 143, 96, 0.959);
+  height: 50%;
+  width: 100%;
+}
   .bubble {
     
      background: linear-gradient(-2deg, #383782 0%, #4400ff 20%);
@@ -196,7 +167,8 @@
      border-radius: 10px;
      padding: 0px;
      margin-bottom: 10%;
-    
+    position: relative;
+    bottom: -70%;
  }
  .bubble:after {
      content: '';
@@ -205,7 +177,7 @@
      width: 0;
      z-index: 1;
      border-style: solid;
-     border-width: 61px 8px 0 0;
+     border-width: 30px 8px 0 0;
      border-color: #2412a8 transparent transparent transparent;
      
      left: 62%;
@@ -231,6 +203,13 @@
  .title{
    font-size: 1.5vw;
  }
+ .guidePlacement{
+  position: relative;
+    bottom:-30%;
+ }
+ .guide1{
+    height: 40vw;
+  }
   /* @media Rule  */
 @media all and (max-width: 850px) {
 .gridBar{
@@ -239,10 +218,9 @@
 .bubble{
   font-size: 14px;
 }
-}
-.content{
-  margin-top: 10%;
-}
+
+
+  
 </style>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

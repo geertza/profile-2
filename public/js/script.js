@@ -8,8 +8,7 @@ $('#contact').click (function() {
 $('#x').click (function() {
   $('.contact').css("display","none")
 })
-  // preventdefault();
-  // $('contact').css("display","none")
+ 
 
 
 // When the user clicks anywhere outside of the modal, close it

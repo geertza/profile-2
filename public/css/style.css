@@ -1,24 +1,47 @@
 
-/* -----------------header--------------- */
-         
-header{
-  height: 20vh;
+/* ----------header------------ */
+.marble{
+  position: relative;
+  float: right;
+  height: 14vh;
+width: 14vh;
+border-radius: 50%;
+background-image: url(/visuals/marble.jpg);
+background-size: cover;
+font-size: 1VW;
+
+}
+/* fill in the gap created from header z-index */
+.filler{
+
+  height: 15vh;
    width:100vw;
-   overflow: hidden;
-  position: fixed;
+  }
+
+header{
+height: 15vh;
+width:100vw;
+/* overflow: hidden; */
+position: fixed;
+z-index: 5;
+border-width: 0px;  
+}
+.headerBar{
+height: 15vh;
+width: 100vw;
 background-image: url(/visuals/mantel.jpg);
-border-width: 0px;
-z-index: 9;  
+z-index: 5;
 }
 .moon2{
-  height: 80vh;
-  width: 80vh;
-  border-radius: 50%;
-  background-image: url(/visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg);
-  background-size: cover;
-  position: relative;
-  left: 30%;
-  top: -320%;
+height: 65vh;
+width: 65vh;
+border-radius: 50%;
+background-image: url(/visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg);
+background-size: cover;
+position: fixed;
+left: 30%;
+top: -40%;
+z-index: 99;
 } 
 .guide{
 width: 20vw;
@@ -30,30 +53,30 @@ font-weight:600 ;
 text-shadow:2px #EC7A44 ;
 margin: 1.5vh;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-  border-style:ridge;
-  border-color: rgba(112, 128, 144, 0.452);
+border-style:ridge;
+border-color: rgba(112, 128, 144, 0.452);
 }
 .btnleft{
-  display: block;
-  position: absolute;
-  left: 0%;
-  top:5%;
+display: block;
+position: absolute;
+left: 0%;
+top:5%;
 } 
 .btnRight{
-  display: block;
-  position: absolute;
-  right: 0%;
-  top:0%; 
+display: block;
+position: absolute;
+right: 0%;
+top:0%; 
 }
 .newlogo{
-    height: 30vh;
-    position: absolute;
-    left:35%; 
-     top: -6vh;
-    /* clip-path: ellipse(49% 40% at 50% 50%); */
-    z-index: 99999;
-    filter: drop-shadow(0 10px 8px black);
-    
+height: 25vh;
+position: relative;
+left:10%; 
+ top: 55%;
+/* clip-path: ellipse(49% 40% at 50% 50%); */
+z-index: 3;
+filter: drop-shadow(0 10px 8px black);
+
 }
 
 .neon{
@@ -68,22 +91,20 @@ animation: flicker 2.0s linear infinite;
 /* --------------neon effects------------------ */
 
 @keyframes flicker {
- 
+
 0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-   
-   box-shadow:
-       0 0 .5rem rgb(22, 30, 141),
-       inset 0 0 .5rem rgb(38, 13, 99),
-       0 0 2rem var(--neon-border-color),
-       inset 0 0 2rem var(--neon-border-color),
-       0 0 4rem var(--neon-border-color),
-       inset 0 0 4rem var(--neon-border-color);        
+
+box-shadow:
+   0 0 .5rem rgb(22, 30, 141),
+   inset 0 0 .5rem rgb(38, 13, 99),
+   0 0 2rem var(--neon-border-color),
+   inset 0 0 2rem var(--neon-border-color),
+   0 0 4rem var(--neon-border-color),
+   inset 0 0 4rem var(--neon-border-color);        
 }
 
 20%, 24%, 55% {        
-   text-shadow: none;
-   box-shadow: none;
+text-shadow: none;
+box-shadow: none;
 }    
 }
-
- 
