@@ -14,21 +14,21 @@
             <img src="./visuals/logo.png" class="newlogo"></img>
         </div>
  
-       <div class="headerBar">
-           <button class="marble" id="contact" type="button" ><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-inbox" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+       <div class="bar">
+           <a class="marble" id="contact" type="button" ><svg width="4vh" height="4vh" viewBox="0 0 16 16" class="bi bi-inbox" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                <path fill-rule="evenodd" d="M3.81 4.063A1.5 1.5 0 0 1 4.98 3.5h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1-.78.624l-3.7-4.624a.5.5 0 0 0-.39-.188H4.98a.5.5 0 0 0-.39.188L.89 9.312a.5.5 0 1 1-.78-.624l3.7-4.625z"/>
                <path fill-rule="evenodd" d="M.125 8.67A.5.5 0 0 1 .5 8.5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124a1.5 1.5 0 0 1-1.489 1.314H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393zm.941.83l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438l.32-2.562H10.45a2.5 2.5 0 0 1-4.9 0H1.066z"/>
-             </svg>CONTACT</button>              
+             </svg></a>              
        
-        <a class="marble neon" id="home" type="button" href="\"><p></p><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <a class="marble" id="home" type="button" href="\"><p></p><svg width="4vh" height="4vh" viewBox="0 0 16 16" class="bi bi-house-door neon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
            <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
            <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-         </svg><p>HOME</p></a>
-        <a class="marble" id='projects' type="button" href="\projects" ><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-image" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+         </svg><p></p></a>
+        <a class="marble" id='projects' type="button" href="\projects" ><svg width="4vh" height="4vh" viewBox="0 0 16 16" class="bi bi-image" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
            <path fill-rule="evenodd" d="M14.002 2h-12a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-12-1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12z"/>
            <path d="M10.648 7.646a.5.5 0 0 1 .577-.093L15.002 9.5V14h-14v-2l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71z"/>
            <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-         </svg>PROJECTS</a>
+         </svg></a>
       
 </header>
 <div class="filler"></div>
@@ -114,6 +114,12 @@
           
         </div>
     </div>
+    </div>
+    <footer>
+      <button   onclick="window.open('https://github.com/geertza')" class="footLink" id="github"></button>
+      <button   onclick= "window.location.href =`/demo/resume`" class="footLink" id="resume"></button>
+      <button   onclick= "window.open('https://www.linkedin.com/in/andy-geertz-283b4098')" class="footLink" id="linked"></button>
+</footer>
    
     <div class="contact container">
         <div class="close">
@@ -154,126 +160,12 @@
                     </div> 
              </form>   
         </div>
-</body>
-<style>
-.background1{
-  height: 90vh;
-  width: 100vw;
-  background-color: white;
-  background-image: url(/visuals/snowPlanet.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: fixed;
-    top: 10%; 
-    z-index: -1;
-}
-/* .middle{
-    background-image: url('/visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg');
-    
-} */
-.preview{
-  position: relative;
-  right:-10%;
- 
-    margin: 2vw;
-   
-}
-.eager{
-  position: relative;
-  top: 7vh;
-  left: 0%;
-}
-a1{
-  font-size: 3.5vw;
-  font-family: Georgia, 'Times New Roman', Times, serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 700;
-  text-shadow:.5px .5px black;
-  color: rgb(20, 143, 143) ;
-  text-transform: capitalize ;
-  
-}
-h4{
-  position: relative;
-  left: 30%;
-  text-align: center;
-  font-size: 2.5vw;
-  color: rgb(31, 27, 28);
-  font-family: lato;
-  text-shadow: 1px 1px darkblue;
-  text-transform: uppercase;
-  background-color: darkgrey;
-  width: 60%;
-}
-/* UofU -----------*/
-#u{
-  width: 40vw;
-  background-color: black;
-}
-.WebDevClass{
-  background-color: rgb(204,0,0);
+        </div>
+      </div>
 
-  width: 80%;
- margin: 15%;
- font-family: trajan;
- color: black;
- text-shadow: .5px .5px rgb(128,128,128);
- border-style: solid;
- border-color:rgb(128,128,128) ;
- border-radius: 15px;
- border-width: 15px;
-}
-h5{
-  text-align: center;
-  text-transform: uppercase;
-  margin: 5px 0px;
-  text-decoration: underline;
-}
-.listLearned{
-  /* position: relative;
-  left: 30%; */
-  margin:  0% 3vw;
-}
-.side{
-  /* background-image: url(/visuals/mantel.jpg); */
-  height: 90vh;
-}
-.filler{
 
-height: 30vh;
- width:100vw;
-}
-video{
+      </body>
 
-  width: 50vw;
-}
-.self{
-    position: fixed;
-    bottom: -10%;
-    left: 0%;
-    height: 80vh;
-    filter:drop-shadow(2px 2px 20px #2087c2);
-   
-   filter:box-shadow(         inset 0 0 10px #000000);
-}
-/* -------just this version--------------- */
-.contact{
-   display: none;
- }
- h2{
-   color: aliceblue;
- }
- .middle{
-   height: 300vh;
-   /* background-color: rgba(240, 248, 255, 0.26); */
- }
- /* --------------fonts------------ */
- @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
- @font-face {
-  font-family: trajan;
-  src: url(/fonts/Trajan\ Pro\ Regular.ttf);
-}
-
-</style>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

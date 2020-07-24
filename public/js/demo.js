@@ -68,7 +68,12 @@
            lang = ['Javascript',"Nodejs","Express","MySql"];
         break;
       default:
-        // code block
+        document.getElementById("site").src = "../jobs/Andy-Geertz.pdf" 
+        title='Andy Geertz'
+        github= 'https://github.com/geertza';
+        site= "../jobs/Andy-Geertz.pdf";
+        description = "";
+         lang = ['Computer Geek'];
     }speechRender(description,lang,title);
   }
   

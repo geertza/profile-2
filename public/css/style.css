@@ -3,34 +3,37 @@
 .marble{
   position: relative;
   float: right;
-  height: 14vh;
-width: 14vh;
-border-radius: 50%;
-background-image: url(/visuals/marble.jpg);
-background-size: cover;
-font-size: 1VW;
-
+ 
 }
+.bi{
+  height: 8vh;
+width: 10vh;
+border-radius: 30%;
+/* background-image: url(/visuals/cassi-josh-lhnOvu72BM8-unsplash.jpg);
+background-size: cover; */
+margin: 0vh 4vh;
+color: rgb(33, 106, 216);
+}
+
 /* fill in the gap created from header z-index */
 .filler{
-
-  height: 15vh;
+height: 15vh;
    width:100vw;
   }
 
 header{
 height: 15vh;
 width:100vw;
-/* overflow: hidden; */
 position: fixed;
 z-index: 5;
 border-width: 0px;  
 }
-.headerBar{
-height: 15vh;
+.bar{
+height: 10vh;
 width: 100vw;
 background-image: url(/visuals/mantel.jpg);
 z-index: 5;
+padding: 0vh 6vh;
 }
 .moon2{
 height: 65vh;
@@ -56,18 +59,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 border-style:ridge;
 border-color: rgba(112, 128, 144, 0.452);
 }
-.btnleft{
-display: block;
-position: absolute;
-left: 0%;
-top:5%;
-} 
-.btnRight{
-display: block;
-position: absolute;
-right: 0%;
-top:0%; 
-}
+
 .newlogo{
 height: 25vh;
 position: relative;
@@ -108,7 +100,45 @@ text-shadow: none;
 box-shadow: none;
 }    
 }
+/* ----------------footer---------------------- */
+footer{
+  height: 10vh;
+  width: 100vw;
+  background-image: url(/visuals/mantel.jpg);
+  padding: 0vh 6vh;
+  position: relative;
+  bottom: 0%;
+  right: 0%;
+}
+.footLink{
+ height: 6vh;
+  width: 6vh;
+  border-radius: 50% ;
+ margin: 0 15%;
+ 
+  z-index: 99;
+  /* border-style: double;
+  border-width: 50px; */
 
+}
+#github{
+   background-image: url(/visuals/github.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-color: green;
+}
+#resume{
+  background-image: url(../visuals/resume.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-color: silver;
+}
+#linked{
+  background-image: url(../visuals/linked.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-color: rgb(43, 31, 150);
+}
 /* ----------------------projects page----------------- */
 body{
   background-color: rgb(7, 63, 7);
@@ -231,4 +261,146 @@ position: relative;
 top: 20%;
 }
 
+}
+
+.background1{
+  height: 90vh;
+  width: 100vw;
+  background-color: white;
+  background-image: url(/visuals/snowPlanet.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 10%; 
+    z-index: -1;
+}
+/* .middle{
+    background-image: url('/visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg');
+    
+} */
+.preview{
+  position: relative;
+  right:-10%;
+ 
+    margin: 2vw;
+   
+}
+.eager{
+  position: relative;
+  top: 7vh;
+  left: 0%;
+}
+a1{
+  font-size: 3.5vw;
+  font-family: Georgia, 'Times New Roman', Times, serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  text-shadow:.5px .5px black;
+  color: rgb(20, 143, 143) ;
+  text-transform: capitalize ;
+  
+}
+h4{
+  position: relative;
+  left: 30%;
+  text-align: center;
+  font-size: 2.5vw;
+  color: rgb(31, 27, 28);
+  font-family: lato;
+  text-shadow: 1px 1px darkblue;
+  text-transform: uppercase;
+  background-color: darkgrey;
+  width: 60%;
+}
+/* UofU -----------*/
+#u{
+  width: 40vw;
+  background-color: black;
+}
+.WebDevClass{
+  background-color: rgb(204,0,0);
+
+  width: 80%;
+ margin: 10%;
+ font-family: trajan;
+ color: black;
+ text-shadow: .5px .5px rgb(128,128,128);
+ border-style: solid;
+ border-color:rgb(128,128,128) ;
+ border-radius: 15px;
+ border-width: 15px;
+}
+h5{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5px 0px;
+  text-decoration: underline;
+}
+.listLearned{
+  /* position: relative;
+  left: 30%; */
+  margin:  0% 3vw;
+}
+.side{
+  /* background-image: url(/visuals/mantel.jpg); */
+  height: 90vh;
+}
+.filler{
+
+height: 30vh;
+ width:100vw;
+}
+video{
+
+  width: 50vw;
+}
+.self{
+    position: fixed;
+    bottom: -10%;
+    left: 0%;
+    height: 80vh;
+    filter:drop-shadow(2px 2px 20px #2087c2);
+   
+   filter:box-shadow(         inset 0 0 10px #000000);
+}
+/* -------just this version--------------- */
+.contact{
+   display: none;
+ }
+ h2{
+   color: aliceblue;
+ }
+ .middle{
+   height: auto;
+   /* background-color: rgba(240, 248, 255, 0.26); */
+ }
+ /* --------------fonts------------ */
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+ @font-face {
+  font-family: trajan;
+  src: url(/fonts/Trajan\ Pro\ Regular.ttf);
+}
+/* -----------------demo page------------------ */
+iframe{
+  height: 70vh;
+   width: 70vw;
+  position: relative;
+  top: 18vh;
+  margin: 5% 0%;
+}
+
+.infoBox{
+background: linear-gradient(-2deg, #383782 0%, #736b94 20%);
+color: #30393a;
+font-family: Aladin;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+width: auto;
+height: auto;
+border-radius: 10px;
+padding: 0px;
+margin: 5%;
+position: absolute;
+bottom: 30%;
+right: 3%;
 }
