@@ -22,18 +22,18 @@
                  <path fill-rule="evenodd" d="M.125 8.67A.5.5 0 0 1 .5 8.5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124a1.5 1.5 0 0 1-1.489 1.314H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393zm.941.83l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438l.32-2.562H10.45a2.5 2.5 0 0 1-4.9 0H1.066z"/>
                </svg>CONTACT</button>              
          
-          <a class="marble neon" id="home" type="button" href="\"><p></p><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <a class="marble" id="home" type="button" href="\"><p></p><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
              <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
              <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
            </svg><p>HOME</p></a>
-          <a class="marble" id='projects' type="button" href="\projects" ><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-image" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <a class="marble neon" id='projects' type="button" href="\projects" ><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-image" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
              <path fill-rule="evenodd" d="M14.002 2h-12a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-12-1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12z"/>
              <path d="M10.648 7.646a.5.5 0 0 1 .577-.093L15.002 9.5V14h-14v-2l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71z"/>
              <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
            </svg>PROJECTS</a>
         
   </header>
-   <div class="filler"></div>
+   <!-- <div class="filler"></div> -->
    <div class="backdrop cantainer-fluid">
     <div class="row">
       <div class="col-sm-9 gridBar">
@@ -66,19 +66,20 @@
           <button class="box" style="background-image: url('/visuals/penny.jpg')" id="money"></button>
         </div>
       </div>
-    </div>
+   
       </div>
       <div class="col-sm-3 guide">
-        <div class="bubblePlacement">
+      
         <div class="bubble">
-          <div class="badges">
-             </div>
-          <div class="title "></div>
+          <div class="badges"></div>
+            
+          <div class="title neon"></div>
       <div class="discription">What project are you interested in?</div>
-      <button class="liveRedirect">Visit</button>
-      <button class="githubRedirect">Code</button>
+      <button class="Redirect visit">Visit</button>
+      <button class="Redirect code">Code</button>
+      
     </div>
-  </div>
+  
       <div class="guidePlacement">
       <img class="guide1" src="/visuals/guide1.png"></img>
       </div>
@@ -87,141 +88,7 @@
 
     <!-- backdrop div -->
    </div>
-<style>
-  body{
-    background-color: rgb(7, 63, 7);
-  }
-  .backdrop
-    {
-      position: relative;
-      top: 6vh;
-            border-style:ridge;
-            border-color: rgb(83, 48, 17);
-            border-width: 3.5vw;
-            height: auto;
-            width:100%;
-            margin: 1.5%;
-            
-            }
-
-  
- 
- 
-
-          
-      
-   
-  .speech{
-    color: red;
-    font-size: 40px;
-    background-size: inherit;
-    position: relative;
-    right: -50%;
-     height: 60%;
-     width: 80%;
-     overflow: visible;
-     /* background-color: lavender; */
- 
- }  
-/* ---projects grid */
- .gridBar {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 5%;
-  grid-row-gap: 1%;
- 
-  }
-  .box{
-   background-size: cover;
-   background-repeat: no-repeat; 
-   width: 27vw;
-    height: 17vw;
-    
-  }
- 
-  
- /* --------------guide------------- */
-         .guide{
-    position: fixed;
-    bottom: 0%;
-    right: 2%;
-    height: 80vh;
-    overflow: hidden;
-  }
-  .bubblePlacement{
-  background-color: rgba(244, 143, 96, 0.959);
-  height: 50%;
-  width: 100%;
-}
-  .bubble {
-    
-     background: linear-gradient(-2deg, #383782 0%, #4400ff 20%);
-     color: #c9d5d6;
-     font-family: Aladin;
-     font-size: 20px;
-     line-height: 30px;
-     text-align: center;
-     width: auto;
-     height: auto;
-     border-radius: 10px;
-     padding: 0px;
-     margin-bottom: 10%;
-    position: relative;
-    bottom: -70%;
- }
- .bubble:after {
-     content: '';
-     position: absolute;
-     display: block;
-     width: 0;
-     z-index: 1;
-     border-style: solid;
-     border-width: 30px 8px 0 0;
-     border-color: #2412a8 transparent transparent transparent;
-     
-     left: 62%;
-     margin-left: -4px;
- }
- .liveRedirect{
-  height: auto;
-   width: auto;
-   text-align: center;
-   display: none;
-   padding: 10%;
- }
- .githubRedirect{
-  height: auto;
-   width: auto;
-   text-align: center;
-   display: none;
-   padding: 10%;
- }
- .badge{
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
- .title{
-   font-size: 1.5vw;
- }
- .guidePlacement{
-  position: relative;
-    bottom:-30%;
- }
- .guide1{
-    height: 40vw;
-  }
-  /* @media Rule  */
-@media all and (max-width: 850px) {
-.gridBar{
-  top: 20%;
-}
-.bubble{
-  font-size: 14px;
-}
-
-
-  
-</style>
+</body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

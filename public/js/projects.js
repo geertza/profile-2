@@ -1,8 +1,7 @@
-let site=''
+let title=''
 $("#nerd").on('click',function() {
     title='NerdVerse'
     github= 'https://github.com/geertza/NerdVerse'
-    site= 'https://geertza.github.io/NerdVerse/';
     description = 'Basic trivia game about popular science fiction tv shows and movies. Starts out with a dialogue introduction then asks multiply choice questions.'
     lang = ['Javascript'];
     speechRender(description,lang,title);
@@ -10,8 +9,7 @@ $("#nerd").on('click',function() {
 $("#boss").on('click',function() {
     title='Home Kitchen Boss'
     github= 'https://github.com/geertza/Home-Kitchen-Boss'
-    site= 'https://home-kitchen-boss.herokuapp.com/';
-    description = 'This app is used to find recipes for every occasion! Whether you want to know the nationality of it, the diet type of it, or even include allergies to exclude from the list.​'
+    description = 'This app is used to find recipes for every occasion! Whether you want to know the nationality, the diet type, or even include allergies.​'
     lang = ['Javascript','Nodejs'];
     speechRender(description,lang,title);
 })
@@ -58,18 +56,25 @@ $("#diamond").on('click',function() {
     speechRender(description,lang,title);
 })
 $("#money").on('click',function() {
-    title='Money-Penny wirte a readme.md'
+    title='Money-Penny write a readme.md'
     github= 'https://github.com/geertza/MoneyPenny-write-a-readme.md';
     site= 'https://github.com/geertza/MoneyPenny-write-a-readme.md';
-    description = "A command-line application will allow for quick and easy generation of a project README";
+    description = "A command-line application which will allow for quick and easy generation of a project README";
      lang = ['Javascript',"Nodejs"];
+    speechRender(description,lang,title);
+})
+$("#burger").on('click',function() {
+    title='Burger Time Part II'
+    github= 'https://github.com/geertza/Burger-Time-part-2.git';
+    site= 'https://burger-time-part-2.herokuapp.com/';
+    description = "Make burger,Eat burger, Get rid of evidence";
+     lang = ['Javascript',"Nodejs","Express","MySql"];
     speechRender(description,lang,title);
 })
 function speechRender(description,lang,title){
     $('.title').text(title)
     $('.discription').text(description)
-    $('.githubRedirect').css("display","inline-table")  
-    $('.liveRedirect').css("display","inline-table")
+    $('.Redirect').css("display","inline-table")  
     $('.badges').empty();    
         for (i = 0; i < lang.length; i++) {
         newBadge = `<span class="badge badge badge-success">${lang[i]}</span>`
@@ -77,9 +82,9 @@ function speechRender(description,lang,title){
         }
 }
 
-$('.liveRedirect').click (function() {
-    window.open(`${site}`)
+$('.visit').click (function() {
+    window.location.href =`/demo/${title}`
   })
-$('.githubRedirect').click (function() {
+$('.code').click (function() {
     window.open(`${github}`)
   })

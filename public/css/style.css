@@ -108,3 +108,127 @@ text-shadow: none;
 box-shadow: none;
 }    
 }
+
+/* ----------------------projects page----------------- */
+body{
+  background-color: rgb(7, 63, 7);
+}
+.backdrop
+  {
+    position: relative;
+    top: 0vh;
+    border: 15px solid transparent;
+    height: auto;
+    width:100%;
+    padding: 20% 10%;
+    border-image: url('/visuals/mantel.jpg') 80 /0px 30px 0px 80px;
+    }
+
+.speech{
+  color: red;
+  font-size: 40px;
+  background-size: inherit;
+  position: relative;
+  right: -50%;
+   height: 60%;
+   width: 80%;
+   overflow: visible;
+   /* background-color: lavender; */
+
+}  
+/* ---projects grid */
+.gridBar {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 5%;
+grid-row-gap: 3%;
+
+}
+.box{
+ background-size: cover;
+ background-repeat: no-repeat; 
+ width: 27vw;
+  height: 17vw;
+  
+}
+
+
+/* --------------guide------------- */
+       .guide{
+  position: fixed;
+  bottom: 0%;
+  right: 2%;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+.bubblePlacement{
+background-color: rgba(244, 143, 96, 0.959);
+height: 50%;
+width: 100%;
+}
+.bubble {
+  
+   background: linear-gradient(-2deg, #383782 0%, #736b94 20%);
+   color: #30393a;
+   font-family: Aladin;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   width: auto;
+   height: auto;
+   border-radius: 10px;
+   padding: 0px;
+   margin: 5%;
+  position: absolute;
+  bottom: 50%;
+  right: 3%;
+}
+.bubble:after {
+   content: '';
+   position: absolute;
+   display: block;
+   width: 0;
+   z-index: 1;
+   border-style: solid;
+   border-width: 30px 8px 0 0;
+   border-color: #2412a8 transparent transparent transparent;
+   
+   left: 62%;
+   margin-left: -4px;
+}
+.Redirect{
+height: auto;
+ width: auto;
+ text-align: center;
+ display: none;
+ padding: 3px;
+ margin: 3%;
+ background-color: green;
+ border-radius: 35px;
+}
+
+.badge{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title{
+ font-size: 26px;
+ color: rgb(24, 218, 89);
+ text-shadow:1px 2px silver;
+ margin: 5%;
+}
+.guidePlacement{
+position: relative;
+  bottom:-50%;
+}
+.guide1{
+  height: 40vw;
+}
+/* @media Rule  */
+@media all and (max-width: 850px) {
+.gridBar{
+top: 20%;
+}
+
+}
